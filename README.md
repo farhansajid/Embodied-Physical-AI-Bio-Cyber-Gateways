@@ -39,7 +39,7 @@ The EPA-BCG framework spans four interconnected multi-scale domains:
 ```
 
 <p align="center">
-  <img src="manuscript/figures/fig6_system_architecture.png" alt="End-to-End System Architecture" width="95%"/>
+  <img src="figures/fig6_system_architecture.png" alt="End-to-End System Architecture" width="95%"/>
   <br>
   <em>Figure 1: End-to-End Multi-Scale Architecture of the Embodied Physical AI Bio-Cyber Gateway (EPA-BCG).</em>
 </p>
@@ -59,32 +59,32 @@ The EPA-BCG framework spans four interconnected multi-scale domains:
 
 ### 1. 3D Advection-Diffusion Transport & Bio-FET Transduction
 <p align="center">
-  <img src="manuscript/figures/fig7_spatial_concentration_contour.png" alt="Spatial Plume Contour" width="48%"/>
-  <img src="manuscript/figures/fig2_biofet_spike_transduction.png" alt="Bio-FET Transduction" width="48%"/>
+  <img src="figures/fig7_spatial_concentration_contour.png" alt="Spatial Plume Contour" width="48%"/>
+  <img src="figures/fig2_biofet_spike_transduction.png" alt="Bio-FET Transduction" width="48%"/>
   <br>
   <em>Left: 2D spatial molecular concentration snapshots ($t = 10, 30, 60\,\text{ms}$) under parabolic laminar flow. Right: Multi-stage transduction dynamics: receptor occupancy $\theta(t)$, subthreshold current $I_{\text{ds}}(t)$, and asynchronous LIF spike generation.</em>
 </p>
 
 ### 2. Equalization Performance & ISI Deconvolution
 <p align="center">
-  <img src="manuscript/figures/fig3_ber_vs_symbol_interval.png" alt="BER vs Symbol Interval" width="48%"/>
-  <img src="manuscript/figures/fig4_pino_isi_cancellation.png" alt="PINO ISI Cancellation" width="48%"/>
+  <img src="figures/fig3_ber_vs_symbol_interval.png" alt="BER vs Symbol Interval" width="48%"/>
+  <img src="figures/fig4_pino_isi_cancellation.png" alt="PINO ISI Cancellation" width="48%"/>
   <br>
   <em>Left: Bit Error Rate (BER) across symbol durations ($T_s \in [25, 85]\,\text{ms}$) comparing Thresholding, LMMSE, Data-Driven SNN, and PINO. Right: Histograms showing severe raw spike count overlap transformed into sharp, bimodal decision margins under PINO deconvolution.</em>
 </p>
 
 ### 3. Energy-Latency Pareto Frontier & Training Convergence
 <p align="center">
-  <img src="manuscript/figures/fig5_energy_latency_tradeoff.png" alt="Energy Latency Tradeoff" width="48%"/>
-  <img src="manuscript/figures/fig9_pino_convergence_and_robustness.png" alt="PINO Convergence and Drift" width="48%"/>
+  <img src="figures/fig5_energy_latency_tradeoff.png" alt="Energy Latency Tradeoff" width="48%"/>
+  <img src="figures/fig9_pino_convergence_and_robustness.png" alt="PINO Convergence and Drift" width="48%"/>
   <br>
   <em>Left: Energy per bit (pJ/bit) vs. latency (ms) Pareto frontier against MCU, edge GPU, and cloud gateways. Right: Multi-objective convergence of data loss $\mathcal{L}_{\text{data}}$ and adjoint PDE loss $\mathcal{L}_{\text{PDE}}$, with velocity drift robustness ($\pm 40\%$).</em>
 </p>
 
 ### 4. Hardware Implementation & Causal Safe-RL
 <p align="center">
-  <img src="manuscript/figures/fig10_circuit_memristor_schematic.png" alt="Memristor Circuit" width="48%"/>
-  <img src="manuscript/figures/fig13_causal_rl_lyapunov_trajectory.png" alt="Causal RL Lyapunov" width="48%"/>
+  <img src="figures/fig10_circuit_memristor_schematic.png" alt="Memristor Circuit" width="48%"/>
+  <img src="figures/fig13_causal_rl_lyapunov_trajectory.png" alt="Causal RL Lyapunov" width="48%"/>
   <br>
   <em>Left: Bio-FET analog front-end, LIF neuron, and 1T1R memristive synaptic crossbar. Right: Structural Causal Model DAG and Lyapunov phase plane converging into the biocompatible safe set $\mathcal{S}_{\text{safe}}$.</em>
 </p>
@@ -154,23 +154,20 @@ Embodied Physical AI Bio-Cyber Gateways/
 │   ├── generate_extra_visuals.py                      <- Visual generator for architecture & plumes (Figs 6-9)
 │   └── generate_flagship_visuals.py                   <- Visual generator for circuits & Lyapunov (Figs 10-13)
 │
-└── manuscript/                                        <- Manuscript assets & citations
-    ├── references.bib                                 <- 42 peer-reviewed BibTeX citations
-    ├── IEEEtran.cls                                   <- Official IEEE Transactions journal style
-    └── figures/                                       <- All 13 publication figures (High-Resolution PNG)
-        ├── fig1_channel_impulse_and_isi.png
-        ├── fig2_biofet_spike_transduction.png
-        ├── fig3_ber_vs_symbol_interval.png
-        ├── fig4_pino_isi_cancellation.png
-        ├── fig5_energy_latency_tradeoff.png
-        ├── fig6_system_architecture.png
-        ├── fig7_spatial_concentration_contour.png
-        ├── fig8_debye_and_kinetics_response.png
-        ├── fig9_pino_convergence_and_robustness.png
-        ├── fig10_circuit_memristor_schematic.png
-        ├── fig11_timing_protocol_sequence.png
-        ├── fig12_capacity_sinr_heatmaps.png
-        └── fig13_causal_rl_lyapunov_trajectory.png
+└── figures/                                           <- All 13 publication figures (High-Resolution PNG)
+    ├── fig1_channel_impulse_and_isi.png
+    ├── fig2_biofet_spike_transduction.png
+    ├── fig3_ber_vs_symbol_interval.png
+    ├── fig4_pino_isi_cancellation.png
+    ├── fig5_energy_latency_tradeoff.png
+    ├── fig6_system_architecture.png
+    ├── fig7_spatial_concentration_contour.png
+    ├── fig8_debye_and_kinetics_response.png
+    ├── fig9_pino_convergence_and_robustness.png
+    ├── fig10_circuit_memristor_schematic.png
+    ├── fig11_timing_protocol_sequence.png
+    ├── fig12_capacity_sinr_heatmaps.png
+    └── fig13_causal_rl_lyapunov_trajectory.png
 ```
 
 ---

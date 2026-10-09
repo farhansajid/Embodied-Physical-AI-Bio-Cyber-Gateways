@@ -21,7 +21,7 @@ import time
 
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
 SIM_DIR = os.path.join(REPO_ROOT, "simulation")
-FIGURES_DIR = os.path.join(REPO_ROOT, "manuscript", "figures")
+FIGURES_DIR = os.path.join(REPO_ROOT, "figures")
 
 
 def print_banner():
