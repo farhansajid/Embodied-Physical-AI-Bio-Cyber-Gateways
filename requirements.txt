@@ -1,0 +1,8 @@
+# Dependencies for Embodied Physical AI Bio-Cyber Gateways (EPA-BCG)
+# Python >= 3.9 recommended
+
+numpy>=1.21.0
+scipy>=1.7.0
+matplotlib>=3.5.0
+torch>=1.12.0
+torchvision>=0.13.0
