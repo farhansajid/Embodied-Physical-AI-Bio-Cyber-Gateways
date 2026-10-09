@@ -241,7 +241,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## ✉️ Contact & Acknowledgments
 
-- **Corresponding Author:** Ahmad M. Author (`author@institution.edu`)
 - **Affiliation:** Key Laboratory of Autonomous Cyber-Physical Systems and Multi-Scale Communications
 - **Target Venue:** IEEE Transactions on Molecular, Biological, and Multi-Scale Communications (IEEE TMBMC)  
   *Special Issue on Physical AI for Autonomous Bio-Cyber Gateways in Molecular and Multi-Scale Communications for IoBNT*
